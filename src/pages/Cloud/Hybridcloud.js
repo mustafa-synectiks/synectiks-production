@@ -60,16 +60,12 @@ import UHC from "../../images/UnderstandingHybridCloud.png"
 import styled from 'styled-components'
 
 export class Hybridcloud extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      modal: false,
-      fields: {},
-      errors: {},
+ state = {
       activeTab: "1",
+      vtabsOpen:false
     }
-    this.toggle = this.toggle.bind(this)
-  }
+    toggle = this.toggle.bind(this)
+
   toggle(tab) {
     if (this.state.activeTab !== tab) {
       this.setState({
@@ -1037,9 +1033,13 @@ h4{
   margin-top: 1.5rem;
 }
 .nav-link.active{
-  background: rgba(0,0,0,0);
+  background: rgba(0,0,0,0) !important;
 }
 @media (min-width: 576px){
+  .nav-link{
+    font-size: 12px;
+    padding:10px 50px;
+  }
   	.himage {
 		width: 50%;
 		height: auto;
@@ -1049,7 +1049,7 @@ h4{
 		margin-bottom: 10px;
 	}
   .nav-link.active{
-  background: rgba(0,0,0,0);
+  background: rgba(0,0,0,0) !important;
 }
 .hbh1 {
     font-size: 2.5rem;
