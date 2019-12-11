@@ -150,7 +150,7 @@ export class Hybridcloud extends React.Component {
           <div className="px-5 py-2 text-justify"></div>
           <div className="">
             <Row className="position-relative">
-              <div className="">
+              <div className="col-md-4">
                 <Nav vertical className="tabList">
                   <NavItem className="one">
                     <span>
@@ -218,7 +218,7 @@ export class Hybridcloud extends React.Component {
                   </NavItem>
                 </Nav>
               </div>
-              <Col className="hPtabs mb-3">
+              <div className="mb-3 col-md-8">
                 <TabContent activeTab={this.state.activeTab}>
                   <TabPane tabId="1">
                     <div>
@@ -991,7 +991,7 @@ export class Hybridcloud extends React.Component {
                     </div>
                   </TabPane>
                 </TabContent>
-              </Col>
+              </div>
             </Row>
           </div>
         </div>
@@ -1035,11 +1035,18 @@ h4{
 .nav-link.active{
   background: rgba(0,0,0,0) !important;
 }
+.nav-link{
+  font-size: 12px;
+  padding-left:3rem;
+}
 @media (min-width: 576px){
   .nav-link{
     font-size: 12px;
     padding:10px 50px;
   }
+.nav-item > a.active, .nav-item > a:active{
+  background: rgba(255,255,255,0.1) !important;
+}
   	.himage {
 		width: 50%;
 		height: auto;
@@ -1048,7 +1055,7 @@ h4{
 		margin-right: 2rem;
 		margin-bottom: 10px;
 	}
-  .nav-link.active{
+  .nav-link.active, .nav-link:active{
   background: rgba(0,0,0,0) !important;
 }
 .hbh1 {

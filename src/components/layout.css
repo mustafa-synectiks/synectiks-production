@@ -137,7 +137,7 @@ a.dropdown-toggle.nav-link {
 	}
 	ul.tabList.nav.flex-column > li > a {
 		width: 18rem;
-		font-size: 15px;
+		font-size: 12px;
 		padding-left: 15%;
 	}
 	.card-deck {
@@ -2223,7 +2223,7 @@ textarea.has-error {
 	margin: 0 0;
 }
 .hPtabs {
-	width: 85vw;
+	width: 70vw;
 	position: relative !important;
 	left: 0rem !important;
 	padding: 0px 25px;
@@ -2274,18 +2274,25 @@ a#bgL.active {
 	padding-left: 3rem !important;
 	background: white !important;
 	font-size: 12px;
+	border-radius: 0px;
+	-webkit-border-radius: ;
+	-moz-border-radius: ;
+	-ms-border-radius: ;
+	-o-border-radius: ;
 }
 a#bgLL.active {
 	border-right: 5px solid #007cc2;
 	padding-left: 3rem !important;
 	background: white !important;
 	font-size: 12px;
+	border-radius: 0px;
 }
 a#bgLLL.active {
 	border-right: 5px solid #007cc2;
 	padding-left: 3rem !important;
 	background: white !important;
 	font-size: 12px;
+	border-radius: 0px;
 }
 .one > span > img {
 	margin-right: -40px !important;
