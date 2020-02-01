@@ -1,6 +1,7 @@
 import React from 'react';
 import Social from './social-icons';
 import { FaEnvelope } from 'react-icons/fa';
+import { IoMdClose } from 'react-icons/io';
 import styled from 'styled-components';
 
 const Topbar = () => {
@@ -9,7 +10,7 @@ const Topbar = () => {
 			<a href='/contactus/index.html' className=''>
 				CONTACT
 			</a>
-			<h6 className='bl br'>QUESTIONS? &emsp; 609 608 0429 X 102</h6>
+			<a className='bl br noclick'>QUESTIONS? &nbsp; 609 608 0429 X 102</a>
 			<h6 className='br'>
 				<FaEnvelope className='social mr-1' />info@synectiks.com
 			</h6>
@@ -39,7 +40,10 @@ const TopBarWrapper = styled.div`
 		padding-left: 1%;
 		padding-right: 1%;
 		font-size: 10px;
+		color: white;
 		-webkit-text-fill-color: #fff;
+		-ms-text-fill-color: #fff;
+		-moz-text-fill-color: #fff;
 	}
 	.ts {
 		display: flex;
@@ -88,7 +92,7 @@ const TopBarWrapper = styled.div`
 			padding-right: 4%;
 			color: #fff;
 			-webkit-text-fill-color: white;
-			font-size: 14px;
+			font-size: 12px;
 			margin-bottom: 0px;
 		}
 		.ts {

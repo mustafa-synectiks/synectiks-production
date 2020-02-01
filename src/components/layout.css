@@ -123,7 +123,13 @@ a.dropdown-toggle.nav-link {
 	#root {
 		width: 113%;
 	}
-
+	h1,
+	h2,
+	h3,
+	h4,
+	p {
+		text-align: left;
+	}
 	.tab-content {
 		padding: 0;
 	}
@@ -150,10 +156,37 @@ a.dropdown-toggle.nav-link {
 		font-size: 9px;
 		-webkit-text-fill-color: #fff;
 	}
+	h1 {
+		font-size: 1.3rem;
+	}
+	h2,
+	h3 {
+		font-size: 1.2rem;
+	}
+	h4 {
+		font-size: 1rem;
+	}
 }
 @media (max-width: 420px) {
 	.tab-content {
 		padding: 0;
+	}
+	h1 {
+		font-size: 1.3rem;
+	}
+	h2,
+	h3 {
+		font-size: 1.2rem;
+	}
+	h4 {
+		font-size: 1rem;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	p {
+		text-align: left;
 	}
 	.himage {
 		width: 14rem;
@@ -175,16 +208,18 @@ a.dropdown-toggle.nav-link {
 		/* word-break: break-all; */
 		white-space: pre-line;
 		overflow-wrap: normal;
-		text-align: justify;
+		text-align: left;
 	}
 	ul li > h4 {
 		font-size: 16px;
 		font-weight: bold;
 	}
 	ul li {
-		font-size: 18px;
+		font-size: 14px;
 		word-break: keep-all;
 		line-height: 22px;
+		font-weight: normal;
+		color: rgba(0, 0, 0, 0.8);
 	}
 	ol li {
 		font-size: 12px;
@@ -195,6 +230,16 @@ a.dropdown-toggle.nav-link {
 @media (max-width: 455px) {
 	.tab-content {
 		padding: 0;
+	}
+	h1 {
+		font-size: 1.3rem;
+	}
+	h2,
+	h3 {
+		font-size: 1.2rem;
+	}
+	h4 {
+		font-size: 1rem;
 	}
 	.marHybrid {
 		margin-left: 0rem;
@@ -215,6 +260,13 @@ a.dropdown-toggle.nav-link {
 	.btn {
 		font-size: 1.5vw !important;
 	}
+	ul li {
+		font-size: 14px;
+		word-break: keep-all;
+		line-height: 22px;
+		font-weight: normal;
+		color: rgba(0, 0, 0, 0.8);
+	}
 	/* #particle-js{
     height: 38m !important;
     padding-left: 3em !important;
@@ -230,6 +282,20 @@ a.dropdown-toggle.nav-link {
 	.tab-content {
 		padding: 0;
 	}
+	h1,
+	h2,
+	h3,
+	h4,
+	p {
+		text-align: left;
+	}
+	ul li {
+		font-size: 14px;
+		word-break: keep-all;
+		line-height: 22px;
+		font-weight: normal;
+		color: rgba(0, 0, 0, 0.8);
+	}
 	p {
 		font-size: 12px;
 		line-height: 20px;
@@ -238,11 +304,21 @@ a.dropdown-toggle.nav-link {
 		/* word-break: break-all; */
 		white-space: pre-line;
 		overflow-wrap: normal;
-		text-align: justify;
+		text-align: left;
 	}
 	.himage {
 		width: 14rem;
 		margin: 10px;
+	}
+	h1 {
+		font-size: 1.3rem;
+	}
+	h2,
+	h3 {
+		font-size: 1.2rem;
+	}
+	h4 {
+		font-size: 1rem;
 	}
 }
 @media (max-width: 576px) {
@@ -254,6 +330,20 @@ a.dropdown-toggle.nav-link {
 	}
 	.tab-content {
 		padding: 0;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	p {
+		text-align: left;
+	}
+	ul li {
+		font-size: 14px;
+		word-break: keep-all;
+		line-height: 22px;
+		font-weight: normal;
+		color: rgba(0, 0, 0, 0.8);
 	}
 	.himage {
 		width: 14rem;
@@ -325,13 +415,37 @@ a.dropdown-toggle.nav-link {
 		width: 100%;
 		height: auto;
 	}
+	h1 {
+		font-size: 1.3rem;
+	}
+	h2,
+	h3 {
+		font-size: 1.2rem;
+	}
+	h4 {
+		font-size: 1rem;
+	}
 }
 @media (max-width: 660px) {
 	/* #particle-js{
     height: 38em !important;
-  } */
+		} */
+	ul li {
+		font-size: 14px;
+		word-break: keep-all;
+		line-height: 22px;
+		font-weight: normal;
+		color: rgba(0, 0, 0, 0.8);
+	}
 	.tab-content {
 		padding: 0;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	p {
+		text-align: left;
 	}
 	.marHybrid {
 		margin-left: 0rem;
@@ -349,10 +463,27 @@ a.dropdown-toggle.nav-link {
 	.inputBoxFlex {
 		width: 15em !important;
 	}
+	h1 {
+		font-size: 1.3rem;
+	}
+	h2,
+	h3 {
+		font-size: 1.2rem;
+	}
+	h4 {
+		font-size: 1rem;
+	}
 }
 @media (max-width: 650px) {
 	.card-margin {
 		margin-top: 7.5em !important;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	p {
+		text-align: left;
 	}
 	.tab-content {
 		padding: 0;
@@ -369,7 +500,17 @@ a.dropdown-toggle.nav-link {
 		/* word-break: break-all; */
 		white-space: pre-line;
 		overflow-wrap: normal;
-		text-align: justify;
+		text-align: left;
+	}
+	h1 {
+		font-size: 1.3rem;
+	}
+	h2,
+	h3 {
+		font-size: 1.2rem;
+	}
+	h4 {
+		font-size: 1rem;
 	}
 	.sidenav {
 		text-align: center;
@@ -394,7 +535,23 @@ a.dropdown-toggle.nav-link {
 		width: 14rem;
 		margin: 10px;
 	}
-
+	h1 {
+		font-size: 1.3rem;
+	}
+	h2,
+	h3 {
+		font-size: 1.2rem;
+	}
+	h4 {
+		font-size: 1rem;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	p {
+		text-align: left;
+	}
 	.txt {
 		padding-top: 0em !important;
 	}
@@ -409,6 +566,13 @@ a.dropdown-toggle.nav-link {
 	.tab-content {
 		padding: 0;
 	}
+	h1,
+	h2,
+	h3,
+	h4,
+	p {
+		text-align: left;
+	}
 	p {
 		font-size: 12px;
 		line-height: 20px;
@@ -417,7 +581,7 @@ a.dropdown-toggle.nav-link {
 		/* word-break: break-all; */
 		white-space: pre-line;
 		overflow-wrap: normal;
-		text-align: justify;
+		text-align: left;
 	}
 	.himage {
 		width: 14rem;
@@ -426,10 +590,37 @@ a.dropdown-toggle.nav-link {
 	.btn-demo {
 		right: -2.35rem !important;
 	}
+	h1 {
+		font-size: 1.3rem;
+	}
+	h2,
+	h3 {
+		font-size: 1.2rem;
+	}
+	h4 {
+		font-size: 1rem;
+	}
 }
 @media (max-width: 767px) {
 	.tab-content {
 		padding: 0;
+	}
+	h1 {
+		font-size: 1.3rem;
+	}
+	h2,
+	h3 {
+		font-size: 1.2rem;
+	}
+	h4 {
+		font-size: 1rem;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	p {
+		text-align: left;
 	}
 	p {
 		font-size: 12px;
@@ -445,7 +636,16 @@ a.dropdown-toggle.nav-link {
 		width: 14rem;
 		margin: 10px;
 	}
-
+	h1 {
+		font-size: 1.3rem;
+	}
+	h2,
+	h3 {
+		font-size: 1.2rem;
+	}
+	h4 {
+		font-size: 1rem;
+	}
 	.card-deck {
 		width: 20em !important;
 		margin-left: 2.5em !important;
@@ -456,6 +656,13 @@ a.dropdown-toggle.nav-link {
 	.tab-content {
 		padding: 0;
 	}
+	h1,
+	h2,
+	h3,
+	h4,
+	p {
+		text-align: left;
+	}
 	.himage {
 		width: 14rem;
 		margin: 10px;
@@ -465,7 +672,16 @@ a.dropdown-toggle.nav-link {
 		width: 100%;
 		align-self: center;
 	}
-
+	h1 {
+		font-size: 1.3rem;
+	}
+	h2,
+	h3 {
+		font-size: 1.2rem;
+	}
+	h4 {
+		font-size: 1rem;
+	}
 	.dropdown-menu .dropdown .dropdown-menu {
 		margin: 0;
 		border-width: 1px;
@@ -479,7 +695,16 @@ a.dropdown-toggle.nav-link {
 		width: 14rem;
 		margin: 10px;
 	}
-
+	h1 {
+		font-size: 1.3rem;
+	}
+	h2,
+	h3 {
+		font-size: 1.2rem;
+	}
+	h4 {
+		font-size: 1rem;
+	}
 	.carsCtrlRt {
 		float: right !important;
 		right: 1.25em !important;
@@ -491,6 +716,16 @@ a.dropdown-toggle.nav-link {
 	}
 	.tab-content {
 		padding: 0;
+	}
+	h1 {
+		font-size: 1.3rem;
+	}
+	h2,
+	h3 {
+		font-size: 1.2rem;
+	}
+	h4 {
+		font-size: 1rem;
 	}
 	.himage {
 		width: 14rem;
@@ -504,6 +739,16 @@ a.dropdown-toggle.nav-link {
 	.himage {
 		width: 14rem;
 		margin: 10px;
+	}
+	h1 {
+		font-size: 1.3rem;
+	}
+	h2,
+	h3 {
+		font-size: 1.2rem;
+	}
+	h4 {
+		font-size: 1rem;
 	}
 	.card-margin {
 		margin-top: 19em !important;
@@ -519,6 +764,16 @@ a.dropdown-toggle.nav-link {
 	.himage {
 		width: 14rem;
 		margin: 10px;
+	}
+	h1 {
+		font-size: 1.3rem;
+	}
+	h2,
+	h3 {
+		font-size: 1.2rem;
+	}
+	h4 {
+		font-size: 1rem;
 	}
 	/* #particle-js{
   height: 38em !important;
@@ -536,6 +791,16 @@ a.dropdown-toggle.nav-link {
 		width: 14rem;
 		margin: 10px;
 	}
+	h1 {
+		font-size: 1.3rem;
+	}
+	h2,
+	h3 {
+		font-size: 1.2rem;
+	}
+	h4 {
+		font-size: 1rem;
+	}
 }
 @media (max-width: 970px) {
 	.btn-demo {
@@ -547,6 +812,16 @@ a.dropdown-toggle.nav-link {
 	.himage {
 		width: 14rem;
 		margin: 10px;
+	}
+	h1 {
+		font-size: 1.3rem;
+	}
+	h2,
+	h3 {
+		font-size: 1.2rem;
+	}
+	h4 {
+		font-size: 1rem;
 	}
 }
 @media (max-width: 985px) {
@@ -1814,6 +2089,15 @@ background-color: #007bff!important;
 }
 .brdr-pink {
 	border: 5px solid #9c355c;
+}
+.w-12 {
+	width: 9%;
+}
+.w-10 {
+	width: 10%;
+}
+.mn-1p {
+	margin-top: -1.5%;
 }
 .carsCtrl {
 	position: absolute;

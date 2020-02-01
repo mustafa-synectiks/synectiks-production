@@ -1,8 +1,8 @@
-import * as React from "react"
+import React,{ useState } from "react"
 import { Helmet } from "react-helmet"
 // import { Modal, ModalHeader, ModalBody } from "reactstrap"
 // import ModalContact from "../../components/ModalContact"
-// import { FiAlignLeft } from "react-icons/fi"
+import { FaBars } from 'react-icons/fa';
 import Layout from "../../components/layout"
 import CloudCommon from "../../images/CloudCommon.png"
 import HybridCloud from "../../images/HybridCloud.jpg"
@@ -59,167 +59,87 @@ import SD from "../../images/SynectiksDifferentiator.png"
 import UHC from "../../images/UnderstandingHybridCloud.png"
 import styled from 'styled-components'
 
-export class Hybridcloud extends React.Component {
- state = {
-      activeTab: "1",
-      vtabsOpen:false
-    }
-    toggle = this.toggle.bind(this)
+const Hybridcloud=()=> {
+ const [activeTab, setActiveTab] = useState('1');
 
-  toggle(tab) {
-    if (this.state.activeTab !== tab) {
-      this.setState({
-        activeTab: tab,
-      })
-    }
-  }
-  componentDidMount() {
-    window.scrollTo(0, 0)
+  const toggle = tab => {
+    if(activeTab !== tab) setActiveTab(tab);
   }
 
-  render() {
+  const [isOpen, setNav] = useState(true)
+  const toggleTab = () => {
+    setNav(isOpen => !isOpen)
+  }
+
     return (
       <Layout>
       <HybridWrapper>
-        <div className="bg-lightgrey container">
-          <div className=" text-black w-100 text-white flex-col d-flex text-justify">
-            <div className="mt-2 pt-3 text-black">
-              <div className="d-flex">
-                <h1 className='hbh1'>CLOUD&nbsp; &#8208;</h1>
-                <h1 className='hbh1'>
-                  <i>&nbsp;Cloud Your Way!</i>
-                </h1>
-              </div>
-              <p className="pht lineHeight-24">
-                SYNECTIKS provides industry-leading expertise services and
-                solutions that allow you to address your specific needs and
-                execute on the best-agreed approach to build and manage a
-                cloud-enabled enterprise, that aligns with your transformation
-                goals.
-              </p>
-              <p className="pht lineHeight-24">
-                Whether you are yet to explore or have already started your
-                cloud journey, we help you to accelerate your company’s digital
-                transformation and empower your business to stay ahead of the
-                game.
-              </p>
-              <p className="pht lineHeight-24">
-                With our expertise on Cloud Solutions we will deliver it the way
-                you need it – on-premise or private, public or hybrid cloud. Get
-                no-cost expert guidance.
-              </p>
-              <p className="pht lineHeight-24">
-                We’ll listen to You! Your business objectives and growth
-                strategy. Schedule a 30-minute consultation to get your
-                expedition to cloud started.
-              </p>
-            </div>
 
-            <div className=" pl-5 py-3 mt-3 w-60">
-              <img
-                height="auto"
-                className="img100 img-fluid"
-                src={CloudCommon}
-                alt="Cloud"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className=" bg-white d-flex justify-content-start align-items-center px-0 flex-col text-center col-md-6">
-            <div className="py-3 col-md-6">
-              <a
-                href="/publiccloud/index.html"
-                className="text-logoblue bg-white noLine"
-              >
-                <b>Public Cloud</b>
-              </a>
-            </div>
-            <div className="py-3 col-md-6 bg-logoblue brdr025">
-              <a
-                href="/hybridcloud/index.html"
-                id="hybrid"
-                className="text-white noLine arrrow d-arrow"
-              >
-                Hybrid Cloud
-              </a>
-            </div>
-          </div>
-        </div>
         <div className="container-fluid">
           <div className="px-5 py-2 text-justify"></div>
           <div className="">
             <Row className="position-relative">
-              <div className="col-md-4">
-                <Nav vertical className="tabList">
+            <div className='col-md-3'>
+              <div className="hybridFixed">
+              <button onClick={toggleTab} className='logo-btn'>
+              <FaBars />
+              </button>
+<div className={isOpen?`tabsHide`:`tabList`}>
+                <Nav vertical className='sidetabs'>
                   <NavItem className="one">
-                    <span>
-                      <img src={UHC} alt="" />
-                    </span>
                     <NavLink
                       id="bgL"
-                      className={classnames({
-                        active: this.state.activeTab === "1",
-                      })}
-                      onClick={() => {
-                        this.toggle("1")
-                      }}
-                    >
+                     className={classnames({ active: activeTab === '1' })}
+            onClick={() => { toggle('1');toggleTab() }}
+                    ><span>
+                      <img src={UHC} alt="" className='imgHyb'/>
+                    </span>
                       UNDERSTANDING THE HYBRID CLOUD
                     </NavLink>
                   </NavItem>
+
                   <NavItem className="one">
-                    <span>
-                      <img src={GSHC} alt="" />
-                    </span>
+
                     <NavLink
                       id="bgLL"
-                      className={classnames({
-                        active: this.state.activeTab === "2",
-                      })}
-                      onClick={() => {
-                        this.toggle("2")
-                      }}
-                    >
+                     className={classnames({ active: activeTab === '2' })}
+            onClick={() => { toggle('2'); toggleTab() }}
+                    > <span>
+                      <img src={GSHC} alt="" className='imgHyb'/>
+                    </span>
                       GETTING STARTED TO HYBRID CLOUD
                     </NavLink>
                   </NavItem>
                   <NavItem className="one">
-                    <span>
-                      <img src={HSCH} atl="" />
-                    </span>
+
                     <NavLink
                       id="bgLLL"
-                      className={classnames({
-                        active: this.state.activeTab === "3",
-                      })}
-                      onClick={() => {
-                        this.toggle("3")
-                      }}
-                    >
+                      className={classnames({ active: activeTab === '3' })}
+            onClick={() => { toggle('3'); toggleTab()}}
+                    ><span>
+                      <img src={HSCH} atl="" className='imgHyb' />
+                    </span>
                       HOW SYNECTIKS CAN HELP
                     </NavLink>
                   </NavItem>
                   <NavItem className="one">
-                    <span>
-                      <img src={SD} alt="" />
-                    </span>
+
                     <NavLink
                       id="bgLLL"
-                      className={classnames({
-                        active: this.state.activeTab === "4",
-                      })}
-                      onClick={() => {
-                        this.toggle("4")
-                      }}
-                    >
+                     className={classnames({ active: activeTab === '4' })}
+            onClick={() => { toggle('4'); toggleTab()}}
+                    > <span>
+                      <img src={SD} alt="" className='imgHyb'/>
+                    </span>
                       SYNECTIKS DIFFERENTIATOR
                     </NavLink>
                   </NavItem>
                 </Nav>
+                </div>
               </div>
-              <div className="mb-3 col-md-8">
-                <TabContent activeTab={this.state.activeTab}>
+              </div>
+              <div className="px-4 mb-3 col-md-9">
+                <TabContent activeTab={activeTab}>
                   <TabPane tabId="1">
                     <div>
                       <div className="">
@@ -669,7 +589,7 @@ export class Hybridcloud extends React.Component {
                           <img src={RCM} alt="" className="w-25" />
                           <h4>Revamp change management</h4>
                         </div>
-                        <div class="col-ms-8 col-md-8">
+                        <div className="col-ms-8 col-md-8">
                           <p>
                             The existing governance processes, gates and
                             approval procedures designed for traditional legacy
@@ -686,7 +606,7 @@ export class Hybridcloud extends React.Component {
                           <img src={ICO} alt="" className="w-22" />
                           <h4>Integrate cloud operations</h4>
                         </div>
-                        <div class="col-ms-8 col-md-8">
+                        <div className="col-ms-8 col-md-8">
                           <p>
                             As organizations move workloads to the cloud, the IT
                             operations function should adapt to manage both
@@ -706,7 +626,7 @@ export class Hybridcloud extends React.Component {
                           <img src={AS} alt="" className="w-22" />
                           <h4>Automate support</h4>
                         </div>
-                        <div class="col-sm-12 col-md-8">
+                        <div className="col-sm-12 col-md-8">
                           <p>
                             To the extent possible, automate IT support
                             functions. For example, the traditional trouble
@@ -727,7 +647,7 @@ export class Hybridcloud extends React.Component {
                           <img src={ST} alt="" className="w-22" />
                           <h4>Manage “shadow IT”</h4>
                         </div>
-                        <div class="col-sm-12 col-md-8">
+                        <div className="col-sm-12 col-md-8">
                           <p>
                             Business units are often acquiring the cloud
                             services they need because IT moves too slowly. At
@@ -1011,12 +931,79 @@ var va = document.createElement('script'); va.type = 'text/javascript'; va.async
         </HybridWrapper>
       </Layout>
     )
-  }
 }
 
 export default Hybridcloud
 
 const HybridWrapper = styled.div`
+.hybridFixed{
+  position: fixed;
+  top:6rem;
+  left:0;
+  z-index: 99;
+}
+a#bgL,
+a#bgLL,
+a#bgLLL {
+    padding: 0.5rem 1.5rem;
+    font-size: 12px;
+    height: auto;
+    background: white !important;
+    text-align: left;
+   display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+a#bgL.active,
+a#bgLL.active,
+a#bgLLL.active  {
+    border-right: 5px solid #007cc2;
+    background: white !important;
+    text-align: left;
+    color: #007cc2;
+    border-radius: 0px;
+    padding: 0.5rem 1.5rem;
+    font-size: 12px;
+    height: auto;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.imgHyb {
+	margin-right: 25px !important;
+  width: 55px !important;
+  z-index: 999;
+  position: relative;
+}
+.one {
+	z-index: 99999;
+	display: flex;
+	background: white;
+	box-shadow: 5px 5px 5px lightgray;
+  padding: 5px 2px 2px 20px;
+  border-bottom: 1px solid lightgrey;
+  width:100%;
+  /* background:rgba(0,0,0,0.5); */
+}
+ul.tabList.nav.flex-column {
+		position: relative;
+		z-index: 99999;
+		width: 100%;
+		left: 0rem;
+	}
+	.tabList {
+    display:block;
+		/* width: 100%;
+		color: rgba(0, 0, 0, 0.8);
+		height: 10vh;
+		font-size:15px;
+		cursor: pointer; */
+		/* padding-left: 3.2rem; */
+  }
+  .tabsHide {
+    display: none;
+  }
 h1{
   font-size:1.4rem;
 }
@@ -1030,23 +1017,100 @@ h4{
   font-size:1.1rem;
 }
 .hybmt{
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
 }
 .nav-link.active{
-  background: rgba(0,0,0,0) !important;
+  background: rgba(0,0,0,0);
 }
-.nav-link{
-  font-size: 12px;
-  padding-left:3rem;
+.logo-btn {
+    font-size:2rem;
+    background: white;
+    border: none;
+    outline: none;
+    width: 100vw;
+    padding: 0.6rem;
+    text-align: left;
+    box-shadow: 2px 1px 10px rgba(0,0,0,0.3);
+    color: rgba(0,0,0,0.5);
 }
+
+    .logo-btn:hover {
+      cursor: pointer;
+    }
+      .tab-content{
+        padding-top: 4rem;
+      }
+
 @media (min-width: 576px){
-  .nav-link{
-    font-size: 12px;
-    padding:10px 50px;
+
+  ul.nav.flex-column {
+		position: relative;
+		z-index: 99999;
+		width: 85%;
+		left: 0rem;
   }
-.nav-item > a.active, .nav-item > a:active{
-  background: rgba(255,255,255,0.1) !important;
+  .tabList{
+    display:block;
+  }
+  .tabsHide{
+    display:block;
+  }
+	ul.nav.flex-column > li > a {
+		width: 100%;
+		color: rgba(0, 0, 0, 0.8);
+		height: 10vh;
+		font-size:15px;
+		cursor: pointer;
+		/* padding-left: 3.2rem; */
+  }
+  ul.nav.flex-column > li > a {
+    width: 100%;
+    color: rgba(0,0,0,0.8);
+    height: 10vh;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .tab-content {
+    padding-top:0rem;
+		padding-left: 0.2rem;
+		padding-right: 3rem;
+		text-align: justify;
+	}
+  a#bgL,a#bgLL,a#bgLLL{
+    padding: 0.5rem 1rem !important;
+    background: white !important;
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+a#bgL.active {
+	border-right: 5px solid #007cc2;
+	padding-left: 1rem !important;
+  background: white !important;
+display: flex;
+justify-content: space-around;
+align-items: baseline;
 }
+a#bgLL.active {
+	border-right: 5px solid #007cc2;
+	padding-left: 1rem !important;
+  background: white !important;
+display: flex;
+justify-content: space-around;
+align-items: baseline;
+}
+a#bgLLL.active {
+	border-right: 5px solid #007cc2;
+	padding-left: 1rem !important;
+  background: white !important;
+display: flex;
+justify-content: space-around;
+align-items: baseline;
+}
+   .logo-btn {
+    display: none;
+  }
   	.himage {
 		width: 50%;
 		height: auto;
@@ -1055,11 +1119,19 @@ h4{
 		margin-right: 2rem;
 		margin-bottom: 10px;
 	}
-  .nav-link.active, .nav-link:active{
-  background: rgba(0,0,0,0) !important;
+  .nav-link.active{
+  background: rgba(0,0,0,0);
 }
 .hbh1 {
     font-size: 2.5rem;
+}
+.hybridFixed{
+    display: flex;
+    width: 25vw;
+    height: 50vh;
+}
+.nav-item > a.active, .nav-item > a:active{
+  height: auto;
 }
 h2{
   font-size: 2rem;
@@ -1091,4 +1163,3 @@ h4{
 	}
 }
 `
-

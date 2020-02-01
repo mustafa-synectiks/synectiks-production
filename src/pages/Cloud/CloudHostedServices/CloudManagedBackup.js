@@ -5,6 +5,14 @@ import ModalContact from '../../../components/ModalContact';
 import Layout from '../../../components/layout';
 import cc from '../../../images/CloudCommon.png';
 import cb from '../../../images/CloudBackup2.png';
+import AP from '../../../images/Cloud Managed Backup/Affordable Pricing.png';
+import DMBSA from '../../../images/Cloud Managed Backup/Different Modes of Backup Storage available.png';
+import EBSU from '../../../images/Cloud Managed Backup/Efficient Backup Storage Usage.png';
+import FR from '../../../images/Cloud Managed Backup/Fast Recovery.png';
+import MSGL from '../../../images/Cloud Managed Backup/Multi Secure Geo Locations.png';
+import PRAW from '../../../images/Cloud Managed Backup/Protection for any workload.png';
+import SCRT from '../../../images/Cloud Managed Backup/Security.png';
+import SPRT from '../../../images/Cloud Managed Backup/Support.png';
 import '../../../components/layout.css';
 export class CloudManagedBackup extends React.Component {
 	constructor(props) {
@@ -78,161 +86,106 @@ export class CloudManagedBackup extends React.Component {
 		return (
 			<Layout>
 				<div className='bg-lightgrey container'>
-					<div className=' text-black w-100 text-white flex-col d-flex text-justify'>
-						<div className='mt-2 pt-3 text-black'>
-							<div className='d-flex'>
-								<h1>CLOUD&nbsp; &#8208;</h1>
-								<h1>
-									<i>&nbsp;Cloud Your Way!</i>
-								</h1>
+					<div>
+						<div className='text-black w-100 mt-3 py-4 flex-col d-flex text-justify'>
+							<div className='w-100 pt-3 text-black text-justify mr-3'>
+								<h3>Secure, Reliable & Very Affordable Cloud Backup Solution</h3>
+								<p className='text-justify'>
+									At Synectiks, Data Protection is at the topmost priority and is monitored with
+									utmost vigilance. Synectiks Cloud Backup with front line innovation reinforcement
+									arrangements offers a simple, secure and moderate cloud offsite backup needs. You
+									can have your backup offsite with sureness at Synectiks Cloud establishment at
+									Preferred Geo Locations. Synectiks backup solutions provide exceptional,
+									customizable backup and storage management solutions for any system setup: physical
+									servers, virtual machines, PCs, business-critical applications, Databases and more.
+								</p>
 							</div>
-							<p className='pht lineHeight-24'>
-								SYNECTIKS provides industry-leading expertise services and solutions that allow you to
-								address your specific needs and execute on the best-agreed approach to build and manage
-								a cloud-enabled enterprise, that aligns with your transformation goals.
-							</p>
-							<p className='pht lineHeight-24'>
-								Whether you are yet to explore or have already started your cloud journey, we help you
-								to accelerate your company’s digital transformation and empower your business to stay
-								ahead of the game.
-							</p>
-							<p className='pht lineHeight-24'>
-								With our expertise on Cloud Solutions we will deliver it the way you need it –
-								on-premise or private, public or hybrid cloud. Get no-cost expert guidance.
-							</p>
-							<p className='pht lineHeight-24'>
-								We’ll listen to You! Your business objectives and growth strategy. Schedule a 30-minute
-								consultation to get your expedition to cloud started.
-							</p>
+							<div className='w-100'>
+								<img height='auto' width='100%' className='' src={cb} alt='Cloud Backup' />
+							</div>
 						</div>
-
-						<div className=' pl-5 py-3 mt-3 w-60'>
-							<img height='auto' className='img100 img-fluid' src={cc} alt='Cloud' />
-						</div>
-					</div>
-
-					<div className=' bg-white d-flex justify-content-between align-items-center flex-col text-center col-lg-12'>
-						<div className='py-3 col-md-4'>
-							<a className='text-logoblue bg-white noLine' href='/HostedInfrastructure/index.html'>
-								Hosted Infrastructure
-							</a>
-						</div>
-						<div className='py-3 col-md-4 bg-logoblue brdr025'>
-							<a className='text-white  noLine' href='/CloudManagedBackup/index.html'>
-								Cloud Managed Backup
-							</a>
-						</div>
-						<div className='py-3 col-md-4'>
-							<a className='text-logoblue bg-white noLine' href='/CloudDisasterRecovery/index.html'>
-								Cloud Disaster Recovery
-							</a>
-						</div>
-					</div>
-					<div className='text-black w-100 mt-3 py-2 flex-col d-flex text-justify'>
-						<div className='w-100'>
-							<img height='auto' width='100%' className='' src={cb} alt='Cloud Backup' />
-						</div>
-
-						<div className='w-100 pt-3 text-black text-justify'>
-							<h4 className=''>Efficiently Protect, Manage and Recover Your Data</h4>
-							<p className='lineHeight-34'>
+						<h4> Why choose SYNECTIKS Cloud Backup Solution?</h4>
+						<div className='d-flex align-items-start align-items-md-start mt-5'>
+							<img src={SCRT} alt='' className='w-12 mr-3' />
+							<div>
+								<h5 className='h5'>Security</h5>
+								<p className='text-justify'>
+									Make sure your vendor offers strong security, including encryption. It doesn't
+									matter how well you have protected your primary systems if your backup systems
+									present an easy target for attackers. Any cloud backup service you use needs to have
+									the same level of security that your primary systems have.
+								</p>
 								<ul>
-									<li>Protect, manage and access the information you need.</li>
-									<li>
-										A single interface manages data at a fraction of the time, effort and cost
-										required by separate point products.
-									</li>
-									<li>
-										Simplify data management in complex networked storage environments with a
-										consistent way to locate and manage data and applications.
-									</li>
+									<li>END to END Encryption: In-Flight and Data-At-Rest Encryption.</li>
+									<li>AI-based ransomware protection. </li>
 								</ul>
+							</div>
+						</div>
+					</div>
+					<div className='d-flex align-items-start align-items-md-center'>
+						<img src={DMBSA} alt='' className='w-12 mr-3' />
+						<div>
+							<h5 className='h5'>Different Modes of Backup Storage available</h5>
+							<p className='mt-2'>S3, NAS, SAN, ABGP.</p>
+						</div>
+					</div>
+					<div className='d-flex align-items-start align-items-md-center mt-5'>
+						<img src={AP} alt='' className='w-12 mr-3' />
+						<div>
+							<h5 className='h5'>Affordable Price</h5>
+							<p className='mt-2'>
+								Cloud Backup storage as low as $0.018/GB per Month (only charged for the storage
+								consumed).
 							</p>
 						</div>
 					</div>
-
-					<div className='w-100 text-black text-justify' data-aos='fade-up' data-aos-duration='2000'>
-						<div className='w-100 pt-3 text-black'>
-							<p className='lineHeight-24'>
-								Backups and significantly-restores, should be promptly available inside your budget.
-								Assumed the advances in cloud and hybrid IT environments, it’s time to switch your
-								capital budget, backup operations, quality management, tools and facilities with a
-								secure, versatile pay-per-use choice from a trustworthy partner.
-								<br />{' '}
-							</p>
-							<p className='lineHeight-24'>
-								SYNECTIKS Backup as a Service provides cost-effective managed service for backup and
-								recovery of all types of data. We offer this service where you need it and we ensure
-								compliance with national data sovereignty rules through locally deployed assets and
-								in-country support.
-								<br />{' '}
+					<div className='d-flex align-items-start align-items-md-center mt-5'>
+						<img src={EBSU} alt='' className='w-12 mr-3' />
+						<div>
+							<h5 className='h5'>Efficient Backup Storage Usage</h5>
+							<p className='mt-2'>
+								De-duplication and Compression technologies optimize backup storage capacity.
 							</p>
 						</div>
 					</div>
-
-					<div className='w-100 text-black text-justify' data-aos='fade-up' data-aos-duration='2000'>
-						<p className='lineHeight-34 py-3'>
-							SYNECTIKS protects all of your structured and unstructured data while enabling self-service
-							restoration capability to your application teams. We provide support for:
-							<br />{' '}
-							<ul>
-								<li>Protects files and folders from Servers and Clients</li>
-								<li>
-									Integrates with workloads including SharePoint, Exchange, Database, Servers and VMs
-								</li>
-								<li>Protects guest workloads running in VMware environments</li>
-								<li>
-									Granular restore capability such as mailbox recovery, DB level recovery and Files
-								</li>
-							</ul>
-						</p>
+					<div className='d-flex align-items-start align-items-md-start mt-5'>
+						<img src={MSGL} alt='' className='w-12 mr-3 mn-1p' />
+						<div>
+							<h5 className='h5'>Multi Secure Geo Locations</h5>
+							<p className='text-justify'>
+								We at Synectiks aim for 3-2-1 rule of Thumb to protect the Data, which implies that you
+								should always have three copies of your data, that you keep it backed up on at least two
+								different types of storage media, and that you have at least one copy of the data
+								offsite. Synectiks have different backup Secure Geo locations with different power grids
+								to make sure your data is available when disaster strikes a location.
+							</p>
+						</div>
 					</div>
-
-					<div className='w-100 text-black text-justify' data-aos='fade-up' data-aos-duration='2000'>
-						<p>
-							<h3>Why choose SYNECTIKS?</h3>
-						</p>
-
-						<p className='lineHeight-34 '>
-							SYNECTIKS can deliver end-to-end backup services and support:
-							<br />{' '}
-							<ul>
-								<li>
-									<b>Cost Optimization:</b> Unlike competitors whose models increase backup costs over
-									time, SYNECTIKS helps clients optimize and even reduce backup costs.
-								</li>
-								<li>
-									<b>Flexibility:</b>Scale up and down based on demand.
-								</li>
-								<li>
-									<b>Security:</b> SYNECTIKS provides end-to-end security expertise to protect your
-									data. Data is encrypted in your data center and stored encrypted in SYNECTIKS Cloud
-									- the encryption key is stored and managed locally. 256 AES Encrypted, IP Access
-									restricted.
-								</li>
-								<li>
-									<b>Reliable:</b> Copies of the data are stored to a single data center location and
-									optionally at an additional, remote datacenter.
-								</li>
-								<li>
-									<b>Efficient:</b> De-duplication and compression technologies, ensure that multiple
-									copies of the same data is removed from backup cycles, thus optimizing storage
-									capacity.
-								</li>
-								<li>
-									<b>Peace of Mind:</b> True backup not just storing data.
-								</li>
-							</ul>
-						</p>
-						<p className='lineHeight-24'>
-							<a
-								className='navlink navfont noLine text-logoblue cursPoint'
-								href='https://synectiks.com/contactus/index.html'>
-								<small>Contact&nbsp;Us&nbsp;</small>
-							</a>
-							to learn more about SYNECTIKS Backup as a Service.
-							<br />{' '}
-						</p>
+					<div className='d-flex align-items-start align-items-md-start mt-3'>
+						<img src={PRAW} alt='' className='w-12 mr-3' />
+						<div>
+							<h5 className='h5'>Protection for any workload</h5>
+							<p className='mt-2'>
+								Protect Windows, Linux, Macs, eight major hypervisors, iOS, Android, Complete Office 365
+								Protection, all Major Applications and Databases.
+							</p>
+						</div>
+					</div>
+					<div className='d-flex align-items-start align-items-md-center mt-5'>
+						<img src={FR} alt='' className='w-12 mr-3' />
+						<div>
+							<h5 className='h5'> Fast Recovery</h5>
+							<p className='mt-2'>Recover the Data faster, transfer rate up to 1GB/sec.</p>
+						</div>
+					</div>
+					<div className='d-flex align-items-start align-items-md-center mt-5 pb-3'>
+						<img src={SPRT} alt='' className='w-12 mr-3' />
+						<div>
+							<h5 className='h5'>Support</h5>
+							<p className='mt-2'>
+								Follow the Sun model - 24/7/365 days support from both onshore and offshore Teams.
+							</p>
+						</div>
 					</div>
 				</div>
 				<Helmet>

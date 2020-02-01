@@ -232,8 +232,7 @@ const Slider = () => {
                       Software Defined Transformation
                     </h4>
                     <p className="text-black">
-                      Moving to AWS cloud with Data Center retirement for Motor
-                      Industry.
+                      AWS Cloud migration for a large motor industry.
                     </p>{" "}
                     Learn more <i className="fa fa-arrow-right" />
                   </div>
@@ -284,8 +283,7 @@ const Slider = () => {
                       Storage Migration{" "}
                     </h4>
                     <p className="text-black">
-                      Zero downtime, Zero Fault Petabytes storage migration of
-                      Largest Financial Sector.
+                      Petabytes of storage migration for a large financial company with zero down time.
                     </p>{" "}
                     Learn more <i className="fa fa-arrow-right" />
                   </div>

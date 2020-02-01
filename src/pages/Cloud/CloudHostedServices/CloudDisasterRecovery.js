@@ -36,57 +36,7 @@ export class CloudDisasterRecovery extends React.Component {
 		return (
 			<Layout>
 				<div className='bg-lightgrey container'>
-					<div className=' text-black w-100 text-white flex-col d-flex text-justify'>
-						<div className='mt-2 pt-3 text-black'>
-							<div className='d-flex'>
-								<h1>CLOUD&nbsp; &#8208;</h1>
-								<h1>
-									<i>&nbsp;Cloud Your Way!</i>
-								</h1>
-							</div>
-							<p className='pht lineHeight-24'>
-								SYNECTIKS provides industry-leading expertise services and solutions that allow you to
-								address your specific needs and execute on the best-agreed approach to build and manage
-								a cloud-enabled enterprise, that aligns with your transformation goals.
-							</p>
-							<p className='pht lineHeight-24'>
-								Whether you are yet to explore or have already started your cloud journey, we help you
-								to accelerate your company’s digital transformation and empower your business to stay
-								ahead of the game.
-							</p>
-							<p className='pht lineHeight-24'>
-								With our expertise on Cloud Solutions we will deliver it the way you need it –
-								on-premise or private, public or hybrid cloud. Get no-cost expert guidance.
-							</p>
-							<p className='pht lineHeight-24'>
-								We’ll listen to You! Your business objectives and growth strategy. Schedule a 30-minute
-								consultation to get your expedition to cloud started.
-							</p>
-						</div>
-
-						<div className=' pl-5 py-3 mt-3 w-60'>
-							<img height='auto' className='img100 img-fluid' src={cc} alt='Cloud' />
-						</div>
-					</div>
-
-					<div className=' bg-white d-flex justify-content-around align-items-center flex-col text-center col-lg-12'>
-						<div className='py-3 col-md-4'>
-							<a className='text-logoblue bg-white noLine' href='/HostedInfrastructure/index.html'>
-								Hosted Infrastructure
-							</a>
-						</div>
-						<div className='py-3 col-md-4'>
-							<a className='text-logoblue bg-white noLine' href='/CloudManagedBackup/index.html'>
-								Cloud Managed Backup
-							</a>
-						</div>
-						<div className='py-3 col-md-4 bg-logoblue brdr025'>
-							<a className='text-white  noLine' href='/CloudDisasterRecovery/index.html'>
-								Cloud Disaster Recovery
-							</a>
-						</div>
-					</div>
-					<div className='text-black w-100 mt-3 py-2 flex-col d-flex text-justify'>
+					<div className='text-black w-100 mt-3 py-4 flex-col d-flex text-justify'>
 						<div className='w-50 px-3 mt-3'>
 							<img height='auto' width='100%' className='' src={cd} alt='Cloud Disaster Recovery' />
 						</div>
@@ -140,7 +90,7 @@ export class CloudDisasterRecovery extends React.Component {
 								<small>Contact&nbsp;Us&nbsp;</small>
 							</a>
 							to learn more about SYNECTIKS Disaster Recover as a Service.
-							<br />{' '}
+							<br />
 						</p>
 					</div>
 					<div className='container'>
