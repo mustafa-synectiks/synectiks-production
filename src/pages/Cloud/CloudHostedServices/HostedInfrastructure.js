@@ -11,9 +11,9 @@ import ARP from '../../../images/Hosted Infrastructure/Availability&ReliablePerf
 import HW from '../../../images/Hosted Infrastructure/Hostanyworkload.png';
 import MS from '../../../images/Hosted Infrastructure/MigrationServices.png';
 import MSGL from '../../../images/Hosted Infrastructure/MultiSecureGeoLocations.png';
-import SCR from '../../../images/Hosted Infrastructure/Security.png';
+import SCR from '../../../images/Hosted Infrastructure/HSecurity.png';
 import ST from '../../../images/Hosted Infrastructure/StorageTypesavailable.png';
-import SPT from '../../../images/Hosted Infrastructure/Support.png';
+import SPT from '../../../images/Hosted Infrastructure/HSupport.png';
 
 const wid = {
 	width: '91%'

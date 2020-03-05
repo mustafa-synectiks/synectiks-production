@@ -11,9 +11,9 @@ const Topbar = () => {
 				CONTACT
 			</a>
 			<a className='bl br noclick'>QUESTIONS? &nbsp; 609 608 0429 X 102</a>
-			<h6 className='br'>
+			<a href='mailto:info@synectik.com' target='_top' className='br' rel='noopener noreferrer'>
 				<FaEnvelope className='social mr-1' />info@synectiks.com
-			</h6>
+			</a>
 			<div className='ts'>
 				{Social.map((item, index) => {
 					return (
@@ -82,7 +82,7 @@ const TopBarWrapper = styled.div`
 		justify-content: flex-end;
 		align-items: baseline;
 		width: 100vw;
-		padding-right: 7.8%;
+		padding-right: 3%;
 		a,
 		h6 {
 			text-decoration: none !important;
@@ -102,13 +102,13 @@ const TopBarWrapper = styled.div`
 		}
 		.br {
 			border-right: 1px solid rgba(255, 255, 255, 1);
-			padding-top: 3px;
-			padding-bottom: 3px;
+			padding-top: 2px;
+			padding-bottom: 2px;
 		}
 		.bl {
 			border-left: 1px solid rgba(255, 255, 255, 1);
-			padding-top: 3px;
-			padding-bottom: 3px;
+			padding-top: 2px;
+			padding-bottom: 2px;
 		}
 	}
 `;
